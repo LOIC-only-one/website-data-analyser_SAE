@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'data_website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'db',
+        'USER': 'servops',
+        'PASSWORD': 'servops',
+        'HOST': '192.168.112.129',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation

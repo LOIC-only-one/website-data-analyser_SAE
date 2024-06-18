@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Releve
 
-# Create your views here.
+def releve_list(request):
+    relevés = Releve.objects.all()
+    return render(request, 'releve_list.html', {'relevés': relevés})

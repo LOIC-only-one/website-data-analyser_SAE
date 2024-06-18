@@ -1,0 +1,15 @@
+<!-- templates/releve_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Relevés</title>
+</head>
+<body>
+    <h1>Liste des Relevés</h1>
+    <ul>
+        {% for releve in relevés %}
+            <li>{{ releve.capteur.nom }} - {{ releve.timestamp }} - {{ releve.temperature }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
