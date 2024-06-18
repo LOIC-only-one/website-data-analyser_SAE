@@ -18,17 +18,8 @@ DB_CONFIG = {
 }
 
 def connect_db():
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        return conn
-    except mysql.connector.Error as err:
-        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            print("Something is wrong with your user name or password")
-        elif err.errno == errorcode.ER_BAD_DB_ERROR:
-            print("Database does not exist")
-        else:
-            print(err)
-    return None
+    conn = mysql.connector.connect(**DB_CONFIG)
+    return conn
 
 def init_db():
     conn = connect_db()
@@ -39,7 +30,6 @@ def init_db():
                 capteur_id VARCHAR(50) PRIMARY KEY,
                 nom VARCHAR(100) UNIQUE NOT NULL,
                 piece VARCHAR(50) NOT NULL,
-                emplacement VARCHAR(100)
             )
         ''')
         cursor.execute('''
@@ -68,33 +58,30 @@ def insert_data_to_db(data_entry):
         timestamp = convert_to_mysql_datetime(data_entry["date"], data_entry["time"])
         temperature = data_entry["temperature"]
 
-        # Check if capteur_id exists in Capteurs table
         cursor.execute('SELECT COUNT(*) FROM Capteurs WHERE capteur_id = %s', (capteur_id,))
         if cursor.fetchone()[0] == 0:
-            try:
-                # Insert capteur_id into Capteurs table if it does not exist
-                cursor.execute('''
-                    INSERT INTO Capteurs (capteur_id, nom, piece)
-                    VALUES (%s, %s, %s)
-                ''', (capteur_id, f"Capteur {capteur_id}", piece))
-                conn.commit()
-            except mysql.connector.Error as err:
-                print(f"Error inserting new capteur: {err}")
-                conn.close()
-                return
-
-        # Insert data into Relevés table
-        data_entry_db = (capteur_id, timestamp, temperature)
-        try:
             cursor.execute('''
-                INSERT INTO Relevés (capteur_id, timestamp, temperature)
+                INSERT INTO Capteurs (capteur_id, nom, piece)
                 VALUES (%s, %s, %s)
-            ''', data_entry_db)
+            ''', (capteur_id, f"Capteur {capteur_id}", piece))
             conn.commit()
-        except mysql.connector.Error as err:
-            print(f"Error inserting data: {err}")
-        finally:
-            conn.close()
+
+        data_entry_db = (capteur_id, timestamp, temperature)
+        cursor.execute('''
+            INSERT INTO Relevés (capteur_id, timestamp, temperature)
+            VALUES (%s, %s, %s)
+        ''', data_entry_db)
+        conn.commit()
+        conn.close()
+
+
+
+
+
+############################## MQTT ##############################
+
+
+
 
 def on_connect(client, userdata, flags, rc):
     print(f"Connected with result code {rc}")
