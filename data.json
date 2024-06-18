@@ -1,0 +1,146 @@
+[
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:34:53",
+        "temperature": 18.21
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:34:53",
+        "temperature": 20.49
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:34:58",
+        "temperature": 12.0
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:34:58",
+        "temperature": 27.09
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:03",
+        "temperature": 13.93
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:03",
+        "temperature": 19.03
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:08",
+        "temperature": 4.77
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:08",
+        "temperature": 5.96
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:13",
+        "temperature": 2.5300000000000002
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:13",
+        "temperature": 7.47
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:18",
+        "temperature": 12.19
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:18",
+        "temperature": 17.87
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:23",
+        "temperature": 27.55
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:23",
+        "temperature": 17.73
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:28",
+        "temperature": 14.96
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:28",
+        "temperature": 8.1
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "B8A5F3569EFF",
+        "piece": "sejour",
+        "date": "18/06/2024",
+        "time": "21:35:33",
+        "temperature": 1.52
+    },
+    {
+        "topic": "IUT/Colmar2024/SAE2.04/Maison1",
+        "id": "A72E3F6B79BB",
+        "piece": "chambre1",
+        "date": "18/06/2024",
+        "time": "21:35:33",
+        "temperature": 8.17
+    }
+]
